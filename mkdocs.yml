@@ -28,10 +28,6 @@ theme:
     - search.highlight
     - content.code.copy
 
-nav:
-  - Home: index.md
-  - 繁體中文版本: README_zh.md
-
 markdown_extensions:
   - admonition
   - pymdownx.details
