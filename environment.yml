@@ -1,0 +1,29 @@
+name: agilab_env
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  # Python version
+  - python=3.11
+
+  # Core Scientific computation
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  
+  # PyTorch & CUDA (Adjust versions based on your local GPU drivers)
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=12.1
+
+  # Pip packages (For packages not available or updated faster on pip)
+  - pip:
+    # This installs the local package in editable mode
+    - -e .[dev]
+    # Add other pip-only dependencies below
+    # - transformers
+    # - gymnasium
