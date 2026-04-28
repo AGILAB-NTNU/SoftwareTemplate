@@ -61,7 +61,7 @@ python scripts/train.py --config configs/train.yaml
 
 ## 貢獻指南
 
-本專案遵循 AGILAB 的統一開發規範。在開始貢獻之前，請先參閱 [AGILAB Software Lab Guide](https://github.com/AGILAB-NTNU/AGILAB_Software_Lab_Guide/blob/main/CONTRIBUTING_zh.md) 以瞭解分支策略與程式碼規範。
+本專案遵循 AGILAB 的統一開發規範。在開始貢獻之前，請先參閱 [AGILAB Software Lab Guide](https://github.com/AGILAB-NTNU/AGILAB_Software_Lab_Guide/blob/main/docs/CONTRIBUTING_zh.md) 以瞭解分支策略與程式碼規範。
 
 ## 引用 (Citation)
 
