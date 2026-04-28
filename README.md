@@ -58,6 +58,10 @@
 python scripts/train.py --config configs/train.yaml
 ```
 
+## Contributing
+
+This project follows the unified AGILAB development workflow. Before contributing, please refer to the [AGILAB Software Lab Guide](https://github.com/AGILAB-NTNU/AGILAB_Software_Lab_Guide/blob/main/CONTRIBUTING_zh.md) for branching strategies and coding standards.
+
 ## Citation
 
 If you use this work in your research, please cite it as follows:

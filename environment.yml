@@ -5,8 +5,8 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  # Python version
-  - python=3.11
+  # Python version (Standard version for maximum compatibility)
+  - python=3.9
 
   # Core Scientific computation
   - numpy
