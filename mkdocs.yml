@@ -4,18 +4,22 @@ site_url: https://<your-username>.github.io/<repository-name>/
 
 theme:
   name: material
+  logo: assets/images/logo/AGILAB.png
+  favicon: assets/images/logo/AGILAB_Logo.png
   language: en
   palette:
+    # Day mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
+      primary: blue grey
       accent: indigo
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
+    # Night mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
+      primary: blue grey
       accent: indigo
       toggle:
         icon: material/brightness-4
@@ -28,11 +32,25 @@ theme:
     - search.highlight
     - content.code.copy
 
+extra_css:
+  - assets/stylesheets/extra.css
+
 markdown_extensions:
   - admonition
+  - attr_list
+  - md_in_html
+  - tables
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
-  - tables
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.magiclink
+  - pymdownx.tasklist:
+      custom_checkbox: true
