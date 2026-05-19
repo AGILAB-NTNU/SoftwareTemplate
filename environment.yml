@@ -9,15 +9,15 @@ dependencies:
   - python=3.9
 
   # Core Scientific computation
-  - numpy
-  - scipy
-  - pandas
-  - matplotlib
+  - numpy>=2.0
+  - scipy>=1.11
+  - pandas>=2.1
+  - matplotlib>=3.8
   
   # PyTorch & CUDA (Adjust versions based on your local GPU drivers)
-  - pytorch
-  - torchvision
-  - torchaudio
+  - pytorch=2.2.1
+  - torchvision=0.17.1
+  - torchaudio=2.2.1
   - pytorch-cuda=12.1
 
   # Pip packages (For packages not available or updated faster on pip)
@@ -25,5 +25,5 @@ dependencies:
     # This installs the local package in editable mode
     - -e .[dev]
     # Add other pip-only dependencies below
-    # - transformers
-    # - gymnasium
+    # - transformers=4.38.2
+    # - gymnasium=0.29.1
