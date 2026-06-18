@@ -15,9 +15,9 @@ dependencies:
   - matplotlib>=3.8
   
   # PyTorch & CUDA (Adjust versions based on your local GPU drivers)
-  - pytorch=2.2.1
-  - torchvision=0.17.1
-  - torchaudio=2.2.1
+  - pytorch=2.3.1
+  - torchvision=0.18.1
+  - torchaudio=2.3.1
   - pytorch-cuda=12.1
 
   # Pip packages (For packages not available or updated faster on pip)
