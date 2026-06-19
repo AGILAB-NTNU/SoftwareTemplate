@@ -19,7 +19,10 @@ dependencies:
   - torchvision=0.18.1
   - torchaudio=2.3.1
   - pytorch-cuda=12.1
-
+  # coding style
+  - pre-commit
+  - ruff
+  
   # Pip packages (For packages not available or updated faster on pip)
   - pip:
     # This installs the local package in editable mode
