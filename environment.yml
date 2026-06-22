@@ -9,10 +9,10 @@ dependencies:
   - python=3.9
 
   # Core Scientific computation
-  - numpy>=2.0
-  - scipy>=1.11
-  - pandas>=2.1
-  - matplotlib>=3.8
+  - numpy~=2.0
+  - scipy~=1.11
+  - pandas~=2.1
+  - matplotlib~=3.8
   
   # PyTorch & CUDA (Adjust versions based on your local GPU drivers)
   - pytorch=2.3.1
@@ -20,8 +20,8 @@ dependencies:
   - torchaudio=2.3.1
   - pytorch-cuda=12.1
   # coding style
-  - pre-commit
-  - ruff
+  - pre-commit=3.7.1
+  - ruff=0.4.10
   
   # Pip packages (For packages not available or updated faster on pip)
   - pip:
