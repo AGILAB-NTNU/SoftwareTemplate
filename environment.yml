@@ -7,7 +7,8 @@ channels:
 dependencies:
   # Python version (Standard version for maximum compatibility)
   - python=3.9
-
+  - pip
+  - ipykernel
   # Core Scientific computation
   - numpy~=2.0
   - scipy~=1.11
