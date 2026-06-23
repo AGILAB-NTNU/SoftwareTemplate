@@ -56,6 +56,10 @@ exclude = [
     "dist",
     "node_modules",
     "venv",
+    "setup.py",
+    "build",
+    "install",
+    "log"
 ]
 
 # Same as Black.
