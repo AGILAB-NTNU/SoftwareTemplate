@@ -5,29 +5,32 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  # Python version (Standard version for maximum compatibility)
-  - python=3.9
+  # Python version — update to match your project's requirements
+  - python=3.11
   - pip
   - ipykernel
-  # Core Scientific computation
-  - numpy~=2.0
-  - scipy~=1.11
-  - pandas~=2.1
-  - matplotlib~=3.8
-  
-  # PyTorch & CUDA (Adjust versions based on your local GPU drivers)
-  - pytorch=2.3.1
-  - torchvision=0.18.1
-  - torchaudio=2.3.1
-  - pytorch-cuda=12.1
-  # coding style
+
+  # Core scientific computation — uncomment and pin versions as needed
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+
+  # PyTorch & CUDA — uncomment and adjust versions based on your GPU driver
+  # See https://pytorch.org/get-started/locally/ for compatible version combinations
+  # - pytorch
+  # - torchvision
+  # - torchaudio
+  # - pytorch-cuda=12.1   # requires driver >= 525.60; omit for CPU-only
+
+  # Development tools — kept pinned to ensure consistent CI behaviour
   - pre-commit=3.7.1
   - ruff=0.4.10
-  
-  # Pip packages (For packages not available or updated faster on pip)
+
+  # Pip packages — add project-specific dependencies below
   - pip:
-    # This installs the local package in editable mode
+    # Installs the local package in editable mode (required)
     - -e .[dev]
-    # Add other pip-only dependencies below
-    # - transformers=4.38.2
-    # - gymnasium=0.29.1
+    # Examples of common AI/research packages:
+    # - transformers
+
