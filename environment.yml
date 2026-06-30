@@ -10,18 +10,19 @@ dependencies:
   - pip
   - ipykernel
 
-  # Core scientific computation — uncomment and pin versions as needed
-  - numpy
-  - scipy
-  - pandas
-  - matplotlib
+  # Core Scientific computation
+  - numpy~=2.0
+  - scipy~=1.11
+  - pandas~=2.1
+  - matplotlib~=3.8
+  
+  # PyTorch & CUDA (Adjust versions based on your local GPU drivers)
+  - pytorch=2.3.1
+  - torchvision=0.18.1
+  - torchaudio=2.3.1
+  - pytorch-cuda=12.1
+  # coding style
 
-  # PyTorch & CUDA — uncomment and adjust versions based on your GPU driver
-  # See https://pytorch.org/get-started/locally/ for compatible version combinations
-  # - pytorch
-  # - torchvision
-  # - torchaudio
-  # - pytorch-cuda=12.1   # requires driver >= 525.60; omit for CPU-only
 
   # Development tools — kept pinned to ensure consistent CI behaviour
   - pre-commit=3.7.1
