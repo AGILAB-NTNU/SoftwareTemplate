@@ -6,7 +6,7 @@ channels:
   - defaults
 dependencies:
   # Python version — update to match your project's requirements
-  - python=3.11
+  - python=3.9
   - pip
   - ipykernel
 
