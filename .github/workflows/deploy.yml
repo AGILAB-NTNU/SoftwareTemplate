@@ -25,6 +25,8 @@ jobs:
 
       - name: Sync READMEs to docs
         run: |
+          [ -f README.md ] || touch README.md
+          [ -f README_zh.md ] || touch README_zh.md
           cp README.md docs/index.md
           cp README_zh.md docs/README_zh.md
 
