@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "agilab_lib"
+name = "agilab"
 version = "0.1.0"
 description = "AGILAB Research Software Template"
 authors = [
@@ -75,3 +75,16 @@ indent-style = "space"
 skip-magic-trailing-comma = false
 # Like Black, automatically detect the appropriate line ending.
 line-ending = "auto"
+
+[tool.coverage.report]
+# 排除所有沒有被執行的 import 語句，並精確設定
+show_missing = true
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
+    "raise NotImplementedError",
+    "import",
+    "from",
+]
